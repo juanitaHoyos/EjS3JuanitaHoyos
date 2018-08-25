@@ -9,34 +9,99 @@
 
 
     <!--aqui van los componentes-->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Escriba sus datos"
-        android:textSize="18sp"
-        android:padding="10dp"
-        android:layout_margin="10dp"
-        android:gravity="center"
-        android:id="@+id/tv_titulo"
-        android:textColor="#ffffff"/>
-
     <EditText
+
+        android:id="@+id/et_masa"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="escriba su nombre"
-        android:textColorHint="#ccc"
-        android:id="@+id/et_nombre"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
         android:background="#1f4a74"
-        android:padding="10dp"/>
+        android:gravity="left"
+        android:hint="Masa"
+        android:padding="10dp"
+        android:textColorHint="#cccc"
+        android:textColor="#ffff"
 
-<Button
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="CALCULAR"
-    android:id="@+id/btn_calcular"
-    android:layout_marginTop="10dp"/>
+        />
+
+    <EditText
+
+        android:id="@+id/et_altura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#1f4a74"
+        android:gravity="left"
+        android:hint="Altura"
+        android:padding="10dp"
+
+        android:textColorHint="#cccc"
+        android:textColor="#ffff"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_imc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:padding="10dp"
+
+        android:text="Introduce los datos para calcular tu IMC"
+        android:textColor="#CCCC"
+        android:textSize="12sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#CCCC"
+
+        android:layout_marginTop="4dp"
+        android:background="#1f4a74"
+        android:text="CALCULAR"
+        android:id="@+id/btn_calcular"
 
 
+        />
+
+
+    <TextView
+        android:id="@+id/tv_imc"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="left"
+        android:padding="10dp"
+
+        android:text="Tu imc es "
+        android:textColor="#CCCC"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_resp"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:hint="#1f4a74"
+
+        android:padding="10dp"
+        android:text=" "
+        android:textColor="#CCCC"
+        android:textSize="30sp" />
+
+    <!--cerrar-->
 </LinearLayout>
